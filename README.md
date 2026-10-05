@@ -15,6 +15,7 @@ Open `http://127.0.0.1:8080/`.
 ## Before publishing
 
 1. The app showcase uses three screenshots rendered from actual Flutter widgets with local demo data. The donor capture uses its full preparation page; the hospital and volunteer captures combine existing feature widgets in demo page layouts. They are not captures of signed-in production accounts or live inventory. Keep the on-page demo-data disclosure when replacing them.
+   The five images in the “Why it matters” cards are AI-generated editorial illustrations. They are labeled on the page and do not document chapter activity.
 2. Publish and link an approved MyDugo **app** privacy policy. `privacy.html` currently covers only this public website and says the app policy is pending.
 3. Build the intended Android **release** APK. Verify its version and build number, date, byte size, and SHA-256 checksum. Upload that exact APK to a public HTTPS URL and confirm the URL downloads the same file. Update the hero and download section in `index.html` only after this check: change the hero link if needed, replace the disabled download button with a direct APK link, and add verified metadata next to it. Until then, keep “Download coming soon.”
 4. Recheck the chapter’s address and phone number against the [official Philippine Red Cross blood-service listing](https://redcross.org.ph/give-blood/) before sharing widely.

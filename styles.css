@@ -122,10 +122,16 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .why-intro > p:not(.kicker) { max-width: 480px; color: var(--muted); font-size: 17px; line-height: 1.8; }
 .why-intro .inline-link { margin-top: 14px; }
 .why-list { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 10px; align-items: stretch; }
-.why-list article { display: block; padding: 20px 15px; border: 1px solid var(--line); border-radius: 8px; background: #fbfbfa; }
-.why-list article > span { color: var(--red); font-size: 11px; font-weight: 800; }
+.why-list article { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #fbfbfa; }
+.why-list article > span { padding: 20px 15px 0; color: var(--red); font-size: 11px; font-weight: 800; }
+.why-list article > div { padding: 0 15px 24px; }
 .why-list h3 { font-size: 15px; margin: 26px 0 8px; }
 .why-list p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.why-list article > img { display: block; width: 100%; height: clamp(200px, 23vw, 290px); margin-top: auto; object-fit: cover; }
+.why-list article:nth-child(3) > img { object-position: center 28%; }
+.why-list article:nth-child(4) > img { object-position: center 38%; }
+.why-list article:nth-child(5) > img { object-position: center 25%; }
+.why-list .why-disclosure { grid-column: 1 / -1; margin: 7px 0 0; color: #59656f; font-size: 11px; line-height: 1.6; }
 .app-section { background: #fff; overflow: hidden; }
 .app-section > .container { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr) minmax(0,.85fr); gap: clamp(22px,3vw,44px); align-items: center; }
 .app-section .app-intro { display: block; margin: 0; }
@@ -292,6 +298,9 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .hero-media { min-height: 480px; }
   .hero h1 { font-size: clamp(48px, 5.1vw, 58px); }
   .hero-lede { font-size: 16px; }
+  .why-layout { grid-template-columns: 1fr; gap: 35px; }
+  .why-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .why-list article > img { height: auto; aspect-ratio: 2 / 3; }
   .audience-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .audience-grid article { min-height: 260px; }
   .audience-grid article > span { margin-bottom: 25px; }
