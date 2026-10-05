@@ -230,7 +230,11 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .download-panel > span { color: var(--red); font-size: 10px; font-weight: 850; letter-spacing: .18em; }
 .download-panel h3 { margin: 19px 0 15px; font-size: 30px; }
 .download-panel p { margin-bottom: 25px; color: var(--muted); font-size: 14px; line-height: 1.75; }
-.download-panel button { display: flex; align-items: center; justify-content: space-between; gap: 15px; width: 100%; min-height: 55px; padding: 12px 15px; border: 1px solid #d4d9db; border-radius: 7px; background: #eef0f0; color: #53616a; font-weight: 800; font-size: 13px; cursor: not-allowed; }
+.download-panel .release-details { margin: -6px 0 20px; color: #33414c; font-size: 12px; line-height: 1.7; }
+.download-panel .download-link { display: flex; align-items: center; justify-content: space-between; gap: 15px; width: 100%; min-height: 55px; padding: 12px 15px; border: 1px solid var(--red); border-radius: 7px; background: var(--red); color: #fff; font-weight: 800; font-size: 13px; text-decoration: none; }
+.download-panel .download-link:hover { background: #a8091a; border-color: #a8091a; }
+.download-panel .release-hash { margin: 17px 0 0; color: #33414c; font-size: 11px; overflow-wrap: anywhere; }
+.download-panel .release-hash code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
 .download-panel small { display: block; margin-top: 14px; color: #67737c; font-size: 11px; line-height: 1.6; }
 .contact { background: #fff; }
 .contact-grid { display: grid; grid-template-columns: 1fr .82fr; gap: 13%; }

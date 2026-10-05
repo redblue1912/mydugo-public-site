@@ -12,15 +12,15 @@ python -m http.server 8080 --bind 127.0.0.1 --directory public-site
 
 Open `http://127.0.0.1:8080/`.
 
-## Before publishing
+## Release maintenance and outstanding items
 
 1. The app showcase uses three screenshots rendered from actual Flutter widgets with local demo data. The donor capture uses its full preparation page; the hospital and volunteer captures combine existing feature widgets in demo page layouts. They are not captures of signed-in production accounts or live inventory. Keep the on-page demo-data disclosure when replacing them.
    The five images in the “Why it matters” cards are AI-generated editorial illustrations. They are labeled on the page and do not document chapter activity.
-2. Publish and link an approved MyDugo **app** privacy policy. `privacy.html` currently covers only this public website and says the app policy is pending.
-3. Build the intended Android **release** APK. Verify its version and build number, date, byte size, and SHA-256 checksum. Upload that exact APK to a public HTTPS URL and confirm the URL downloads the same file. Update the hero and download section in `index.html` only after this check: change the hero link if needed, replace the disabled download button with a direct APK link, and add verified metadata next to it. Until then, keep “Download coming soon.”
+2. Publish and link an approved MyDugo **app** privacy policy before describing this preview as a full public launch. `privacy.html` covers only this public website, and the current app policy remains pending.
+3. For each Android update, build with the same private release signing key. Verify the APK version, size, signature, and SHA-256 checksum; publish it as a GitHub Release asset; download it again to verify its hash. Only then update the hero and download section. Never copy the keystore or `key.properties` into this public repository.
 4. Recheck the chapter’s address and phone number against the [official Philippine Red Cross blood-service listing](https://redcross.org.ph/give-blood/) before sharing widely.
 
-The current repository contains local release APKs, but no verified public HTTPS APK URL. This site intentionally does not link to a local APK or show unverified release metadata.
+The current public Android preview is [version 1.1.0 (build 4)](https://github.com/redblue1912/mydugo-public-site/releases/tag/v1.1.0-build4), built October 5, 2026. Its APK is 60,882,354 bytes, with SHA-256 `2128415b74f6939ffddc08eb979ccde4a29958078dc61a461694553b56d23ec1`. Earlier test APKs were signed with Android's debug key and cannot be updated in place with this new release signature.
 
 ## App screen captures
 
@@ -38,7 +38,7 @@ The live site is [mydugo-public-site.onrender.com](https://mydugo-public-site.on
 
 1. Copy only the reviewed contents of `public-site/` into the separate public-site repository. Review the staged file list before committing; do not copy `.env` files, APKs, app source, or private data.
 2. Push the public-site repository's `main` branch. In the Render Static Site service, deploy that commit if it does not start automatically. Its build command is `true` and its publish directory is `./`.
-3. Check the live homepage, `/privacy.html`, stylesheet, logo, phone-width layout, and browser console. Keep the Android download in its clearly labeled coming-soon state until an approved APK is hosted at a verified HTTPS address.
+3. Check the live homepage, `/privacy.html`, stylesheet, logo, phone-width layout, browser console, and Android download URL. Confirm the live metadata matches the published APK asset.
 
 The Philippine Red Cross descriptions link to official resources. The supplied MyDugo logo and Manrope font are copied from this repository into `assets/`; the Manrope license is included there.
 
