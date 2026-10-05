@@ -8,8 +8,8 @@
   <title>MyDugo | Give blood. Stay ready. Help your community.</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preload" href="assets/Manrope.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261005h">
-  <script src="site.js?v=20261005" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261005k">
+  <script src="site.js?v=20261005b" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -51,20 +51,25 @@
     </section>
 
     <section id="app" class="section app-section"><div class="container">
-      <div class="section-heading"><div><p class="kicker">01 / INSIDE MYDUGO</p><h2>A more connected way to be ready to help.</h2></div><p>The app keeps each role close to the next meaningful step. These four previews illustrate existing flows rather than captured app screens. Swipe or use the arrow keys to view them all.</p></div>
-      <div class="app-feature-grid">
-        <article><span>01</span><div><h3>Eligibility &amp; review</h3><p>Submit your questionnaire and follow the chapter's decision.</p></div></article>
-        <article><span>02</span><div><h3>Appointments</h3><p>Request a blood test if needed and a donation visit when cleared.</p></div></article>
-        <article><span>03</span><div><h3>Approved blood needs</h3><p>See relevant published requests and emergency updates in the app.</p></div></article>
-        <article><span>04</span><div><h3>Donation history</h3><p>Review donations recorded in your account.</p></div></article>
-        <article><span>05</span><div><h3>In-app messages</h3><p>Read chapter decisions, appointment updates, and reminders.</p></div></article>
-        <article><span>06</span><div><h3>Volunteer opportunities</h3><p>Approved volunteers can follow published activities and assignments.</p></div></article>
+      <div class="section-heading app-intro">
+        <div><p class="kicker">01 / THE MYDUGO MOBILE APP</p><h2>Everything you need to help, in one app.</h2></div>
+        <p>Explore three feature previews built from MyDugo Flutter widgets. The screens show demo data, so they do not represent a real donor, hospital inventory, or volunteer record.</p>
+        <div class="role-switcher" role="group" aria-label="Choose an app view">
+          <button type="button" class="is-active" data-role="donor" aria-pressed="true">Donor</button>
+          <button type="button" data-role="hospital" aria-pressed="false">Hospital</button>
+          <button type="button" data-role="volunteer" aria-pressed="false">Volunteer</button>
+        </div>
       </div>
-      <div class="screen-gallery" aria-label="Illustrated MyDugo app views. Scroll horizontally to view all four." tabindex="0">
-        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">DONOR HOME</span><h3>Ready when<br>you are.</h3><p>Follow your next step with the chapter.</p><div class="device-red-card"><small>YOUR JOURNEY</small><strong>Start with eligibility</strong><span>Complete your questionnaire for review.</span></div><div class="device-tile"><span>APPOINTMENTS</span><strong>Plan a visit <b>→</b></strong></div><div class="device-tile"><span>YOUR RECORD</span><strong>Donation history <b>→</b></strong></div></div><div class="device-nav">HOME <span>JOURNEY</span> PROFILE</div></div></div><figcaption>Illustrative interface · Donor home</figcaption></figure>
-        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">ELIGIBILITY</span><h3>One step<br>at a time.</h3><p>Your answers help staff review your readiness.</p><div class="device-outline-card"><small>QUESTIONNAIRE</small><strong>Submitted for review</strong><span>Chapter staff confirm the outcome.</span></div><div class="device-progress"><span>Account created</span><i></i><span>Chapter review</span><i></i><span>Next step confirmed</span></div></div><div class="device-nav">HOME <span>JOURNEY</span> PROFILE</div></div></div><figcaption>Illustrative interface · Eligibility review</figcaption></figure>
-        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">APPOINTMENTS</span><h3>Plan your<br>visit.</h3><p>Chapter guidance comes before scheduling.</p><div class="device-outline-card"><small>WHEN REQUIRED</small><strong>Blood-test visit</strong><span>Follow the chapter's instructions.</span></div><div class="device-outline-card"><small>WHEN CLEARED</small><strong>Donation appointment</strong><span>Request an available visit.</span></div></div><div class="device-nav">HOME <span>VISITS</span> PROFILE</div></div></div><figcaption>Illustrative interface · Appointments</figcaption></figure>
-        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">IN-APP UPDATES</span><h3>Stay<br>informed.</h3><p>See messages relevant to your journey.</p><div class="device-message"><svg class="icon" aria-hidden="true"><use href="#i-bell"></use></svg><div><strong>Chapter update</strong><span>Review the latest status in your account.</span></div></div><div class="device-message"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg><div><strong>Approved blood need</strong><span>See a relevant published request.</span></div></div><div class="device-message"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><div><strong>Visit reminder</strong><span>Keep track of appointments.</span></div></div></div><div class="device-nav">HOME <span>UPDATES</span> PROFILE</div></div></div><figcaption>Illustrative interface · Updates</figcaption></figure>
+      <div class="role-stage" aria-label="MyDugo Flutter widget previews">
+        <figure class="role-shot is-active" data-role="donor" data-label="Donor" aria-hidden="false"><div class="phone-frame"><img src="assets/donor-feature.png" alt="MyDugo donor preparation checklist with example progress" width="780" height="1688" loading="lazy"></div><figcaption>Donor preparation · Flutter widget capture</figcaption></figure>
+        <figure class="role-shot is-next" data-role="hospital" data-label="Hospital" aria-hidden="true"><div class="phone-frame"><img src="assets/hospital-feature.png" alt="MyDugo hospital blood availability screen with example statuses" width="780" height="1688" loading="lazy"></div><figcaption>Hospital availability · Flutter widget preview</figcaption></figure>
+        <figure class="role-shot" data-role="volunteer" data-label="Volunteer" aria-hidden="true"><div class="phone-frame"><img src="assets/volunteer-feature.png" alt="MyDugo volunteer dashboard widgets with example service hours" width="780" height="1688" loading="lazy"></div><figcaption>Volunteer opportunities · Flutter widget preview</figcaption></figure>
+      </div>
+      <div class="role-details" aria-live="polite">
+        <div class="role-detail" data-role="donor"><p class="kicker">FOR DONORS</p><h3>Prepare for your next visit.</h3><p>Complete the eligibility questionnaire, follow the chapter review, and use the donation preparation checklist when your visit is arranged.</p><ul><li>Eligibility and chapter review</li><li>Blood-test and donation visits</li><li>Donation history and updates</li></ul></div>
+        <div class="role-detail" data-role="hospital" hidden><p class="kicker">FOR PARTNER HOSPITALS</p><h3>Coordinate blood requests clearly.</h3><p>Authorized hospital staff can check general availability, submit requests, and follow the chapter's review and response.</p><ul><li>General blood availability</li><li>Request submission and status</li><li>Availability alert preferences</li></ul></div>
+        <div class="role-detail" data-role="volunteer" hidden><p class="kicker">FOR VOLUNTEERS</p><h3>See where you can help.</h3><p>Approved volunteers can explore opportunities, check their schedule, and review recorded service after chapter assignments.</p><ul><li>Published opportunities</li><li>Assignments and schedule</li><li>Recorded service history</li></ul></div>
+        <p class="demo-disclosure">Previews captured from real Flutter interface widgets with demo data. Hospital and volunteer screens combine existing widgets in a demo layout. No account, patient, or live inventory information is shown.</p>
       </div>
     </div></section>
 

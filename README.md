@@ -14,12 +14,22 @@ Open `http://127.0.0.1:8080/`.
 
 ## Before publishing
 
-1. The "Inside MyDugo" section has four HTML/CSS phone illustrations of confirmed app flows. Each is labeled as an illustrative interface, not an app screenshot. If owner-approved screenshots become available, replace the illustrations with accurate captions.
+1. The app showcase uses three screenshots rendered from actual Flutter widgets with local demo data. The donor capture uses its full preparation page; the hospital and volunteer captures combine existing feature widgets in demo page layouts. They are not captures of signed-in production accounts or live inventory. Keep the on-page demo-data disclosure when replacing them.
 2. Publish and link an approved MyDugo **app** privacy policy. `privacy.html` currently covers only this public website and says the app policy is pending.
 3. Build the intended Android **release** APK. Verify its version and build number, date, byte size, and SHA-256 checksum. Upload that exact APK to a public HTTPS URL and confirm the URL downloads the same file. Update the hero and download section in `index.html` only after this check: change the hero link if needed, replace the disabled download button with a direct APK link, and add verified metadata next to it. Until then, keep “Download coming soon.”
 4. Recheck the chapter’s address and phone number against the [official Philippine Red Cross blood-service listing](https://redcross.org.ph/give-blood/) before sharing widely.
 
 The current repository contains local release APKs, but no verified public HTTPS APK URL. This site intentionally does not link to a local APK or show unverified release metadata.
+
+## App screen captures
+
+From the full private repository, regenerate the three public image files with:
+
+```powershell
+flutter test test/public_site_capture_test.dart --no-pub --dart-define=EXPORT_PUBLIC_SCREENS=true
+```
+
+The test uses the actual `AppointmentPreparationPage`, `HospitalInventoryAvailability`, `VolunteerImpactCard`, and `VolunteerDestination` Flutter widgets. Its demo values are hard-coded locally and never query Firebase or Supabase. Review the rendered images before copying them to the public repository. The public website labels them as widget previews with demo data.
 
 ## Deploy to Render
 
