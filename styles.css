@@ -141,12 +141,15 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .role-switcher button:hover { border-color: var(--red); }
 .role-switcher button.is-active { border-color: var(--red); background: var(--red); color: #fff; }
 .role-switcher button:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
-.role-stage { position: relative; min-width: 0; height: 585px; }
-.role-shot { display: none; position: absolute; top: 10px; width: min(57%,260px); margin: 0; }
-.role-shot.is-active { display: block; z-index: 2; left: 0; transform: rotate(-3deg); }
-.role-shot.is-next { display: block; z-index: 1; right: 0; top: 46px; transform: rotate(4deg) scale(.93); transform-origin: right top; }
+.role-stage { position: relative; min-width: 0; height: 585px; perspective: 1100px; transform-style: preserve-3d; }
+.role-stage::before { content: ''; position: absolute; z-index: 0; inset: 8% -8% 10%; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(207, 30, 46, .08), rgba(47, 67, 85, .04) 40%, transparent 72%); pointer-events: none; }
+.role-stage::after { content: ''; position: absolute; z-index: 0; left: 12%; right: 2%; bottom: 20px; height: 35px; border-radius: 50%; background: rgba(18, 29, 39, .12); filter: blur(23px); pointer-events: none; }
+.role-shot { position: absolute; top: 10px; left: -8%; width: min(57%,260px); margin: 0; opacity: 0; visibility: hidden; pointer-events: none; transform: translate3d(-16%, 14px, -90px) rotateY(12deg) rotateZ(-6deg) scale(.84); transition: left .62s cubic-bezier(.22,1,.36,1), top .62s cubic-bezier(.22,1,.36,1), transform .62s cubic-bezier(.22,1,.36,1), opacity .42s ease, visibility 0s .62s; }
+.role-shot.is-active { z-index: 2; left: 0; opacity: 1; visibility: visible; transform: translate3d(0, 0, 44px) rotateY(7deg) rotateZ(-3deg); transition: left .62s cubic-bezier(.22,1,.36,1), top .62s cubic-bezier(.22,1,.36,1), transform .62s cubic-bezier(.22,1,.36,1), opacity .42s ease, visibility 0s; }
+.role-shot.is-next { z-index: 1; left: 43%; top: 46px; opacity: 1; visibility: visible; transform: translate3d(0, 26px, -75px) rotateY(-9deg) rotateZ(4deg) scale(.93); transform-origin: right top; transition: left .62s cubic-bezier(.22,1,.36,1), top .62s cubic-bezier(.22,1,.36,1), transform .62s cubic-bezier(.22,1,.36,1), opacity .42s ease, visibility 0s; }
 .role-shot.is-next::after { content: attr(data-label); position: absolute; top: 16px; right: 14px; padding: 5px 8px; border-radius: 4px; background: rgba(255,255,255,.94); color: var(--ink); font-size: 10px; font-weight: 800; }
-.phone-frame { position: relative; overflow: hidden; border: 7px solid #17212b; border-radius: 32px; background: #17212b; box-shadow: 0 18px 34px rgba(16,24,32,.14); }
+.phone-frame { position: relative; overflow: hidden; border: 7px solid #17212b; border-radius: 32px; background: #17212b; box-shadow: inset 2px 2px 0 rgba(255,255,255,.24), inset -2px -2px 0 rgba(0,0,0,.35), 0 12px 20px rgba(16,24,32,.12), 0 30px 55px rgba(16,24,32,.18); transition: box-shadow .62s ease; }
+.role-shot.is-active .phone-frame { box-shadow: inset 2px 2px 0 rgba(255,255,255,.25), inset -2px -2px 0 rgba(0,0,0,.35), 0 18px 24px rgba(16,24,32,.13), 0 38px 65px rgba(16,24,32,.22); }
 .phone-frame img { display: block; width: 100%; height: auto; aspect-ratio: 390 / 844; object-fit: cover; object-position: top; border-radius: 24px; }
 .role-shot figcaption { margin-top: 15px; color: var(--muted); font-size: 11px; line-height: 1.5; text-align: center; }
 .role-shot.is-next figcaption { display: none; }
@@ -157,6 +160,8 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .role-detail ul { list-style: none; margin: 25px 0 0; padding: 0; border-top: 1px solid var(--line); }
 .role-detail li { position: relative; padding: 13px 0 13px 23px; border-bottom: 1px solid var(--line); font-size: 13px; font-weight: 750; }
 .role-detail li::before { content: ''; position: absolute; top: 19px; left: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
+.role-detail:not([hidden]) { animation: role-copy-enter .44s cubic-bezier(.22,1,.36,1) both; }
+@keyframes role-copy-enter { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: translateX(0); } }
 .demo-disclosure { padding-top: 18px; color: #59656f; font-size: 11px; line-height: 1.7; }
 
 /* Audiences and response */
@@ -365,6 +370,8 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .journey-list h3, .journey-list p { max-width: none; }
   .role-stage { height: clamp(475px, 124vw, 625px); }
   .role-shot { width: 57%; }
+  .role-shot.is-active { left: 6%; transform: translate3d(0, 0, 20px) rotateY(4deg) rotateZ(-2deg); }
+  .role-shot.is-next { left: 44%; }
   .role-switcher { gap: 5px; }
   .role-switcher button { flex: 1 1 30%; padding-inline: 8px; }
   .hero-note { right: 12px; bottom: 54px; max-width: 205px; padding: 11px; }
@@ -383,5 +390,5 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
 }
