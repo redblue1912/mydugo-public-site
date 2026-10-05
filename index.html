@@ -3,162 +3,134 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f7f4">
-  <meta name="description" content="Learn about MyDugo, blood donation, and community response in Albay–Legazpi City. Explore the donor app and its chapter-reviewed donation journey.">
-  <title>MyDugo | Give blood. Stay ready.</title>
+  <meta name="theme-color" content="#f7f7f5">
+  <meta name="description" content="MyDugo connects blood donors, hospitals, volunteers, and chapter staff in Albay–Legaspi City. Learn about donation and the Android app.">
+  <title>MyDugo | Give blood. Stay ready. Help your community.</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preload" href="assets/Manrope.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css">
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261005f">
+  <script src="site.js?v=20261005" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2c-3 4-7 8-7 13a7 7 0 0 0 14 0c0-5-4-9-7-13Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 2v6m10-6v6M3 10h18"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2H3Zm13-14a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5h-4"/></symbol>
+    <symbol id="i-hospital" viewBox="0 0 24 24"><path d="M4 21V4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v17H4Zm-2 0h20M9 21v-6h6v6M12 6v6m-3-3h6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 8-3 8-3 10h18c0-2-3-2-3-10Zm-8 13h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.3 8.6 8 11 4.7-2.4 8-6 8-11V5l-8-3Zm-4 9 3 3 5-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 0 1 14 0Zm-7-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></symbol>
+  </svg>
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="MyDugo home">
-        <img src="assets/logo.png" alt="" width="44" height="44">
-        <span>My<span class="brand-red">Dugo</span><small>COMMUNITY BLOOD DONATION</small></span>
-      </a>
+      <a class="brand" href="#top" aria-label="MyDugo home"><img src="assets/logo.png" alt="" width="46" height="46"><span>My<b>Dugo</b><small>CHAPTER BLOOD DONATION</small></span></a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#mydugo">The app</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#faq">FAQ</a>
-        <a class="nav-download" href="#download">Android app <span aria-hidden="true">↗</span></a>
+        <a href="#top">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#blood-donation">Blood Donation</a><a href="#volunteer">Volunteer</a><a href="#app">App</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+        <a class="nav-download" href="#download">Download app <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
       </nav>
     </div>
   </header>
-
   <main id="main">
-    <section id="top" class="hero section-pad">
+    <section id="top" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> MYDUGO · ALBAY–LEGAZPI CITY</p>
+          <p class="eyebrow"><span></span> THE ALBAY–LEGASPI CITY CHAPTER APP</p>
           <h1>Give blood.<br>Stay ready.<br><em>Help your community.</em></h1>
-          <p class="hero-lede">A clearer path from donor readiness to chapter-reviewed appointments, blood requests, and the updates that matter.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#download">Download coming soon <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#how-it-works">How MyDugo works <span aria-hidden="true">→</span></a>
-          </div>
-          <p class="hero-note"><span class="note-dot"></span> Eligibility and blood-test decisions are made by chapter staff.</p>
+          <p class="hero-lede">MyDugo brings donors, approved hospitals, volunteers, and chapter staff closer together for blood donation and community response.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#download">Android download coming soon <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="button button-outline" href="#blood-donation">How donation works <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a></div>
+          <p class="hero-assurance"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg> Chapter staff review eligibility and blood-test results. The donation center makes the final on-site assessment.</p>
         </div>
-        <div class="hero-visual" aria-label="Illustration of the donor journey, from eligibility review to appointment and updates">
-          <div class="visual-grain"></div>
-          <div class="visual-topline"><span>ONE CONNECTED JOURNEY</span><span>01 — 05</span></div>
-          <div class="journey-panel">
-            <div class="journey-mark"><img src="assets/logo.png" alt="" width="70" height="70"></div>
-            <div class="journey-steps" aria-hidden="true">
-              <div><span class="step-num">01</span><span>Get ready</span><span class="step-check">↗</span></div>
-              <div><span class="step-num">02</span><span>Chapter review</span><span class="step-check">↗</span></div>
-              <div><span class="step-num">03</span><span>Plan your visit</span><span class="step-check">↗</span></div>
-            </div>
-          </div>
-          <div class="visual-bottom"><span class="visual-rule"></span><span>PEOPLE FIRST. ALWAYS.</span></div>
-        </div>
+        <figure class="hero-media photo-figure"><img src="assets/donation-center.jpg" alt="A donor's arm during a blood donation procedure" width="1400" height="933" fetchpriority="high"><span class="photo-label">BLOOD DONATION IS A COMMUNITY ACT</span><figcaption>Illustrative photograph: <a href="https://www.pexels.com/photo/man-lying-on-a-gurney-12820069/" target="_blank" rel="noopener noreferrer">Rahul Sapra / Pexels</a>. This is not a chapter photograph.</figcaption></figure>
       </div>
-      <div class="container hero-bottom"><span>MADE FOR THE MOMENTS THAT MATTER</span><a href="#about">Explore the story <span aria-hidden="true">↓</span></a></div>
+      <div class="container hero-foot"><span>MYDUGO · BLOOD DONATION &amp; COMMUNITY RESPONSE</span><a href="#services">Explore the platform <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a></div>
     </section>
 
-    <section id="about" class="about section-pad">
-      <div class="container about-grid">
-        <div><p class="section-kicker">01 / THE MISSION</p><h2>Humanity in action,<br><span class="muted-heading">across the Philippines.</span></h2></div>
-        <div class="about-content">
-          <p class="lead">The Philippine Red Cross works to protect life and dignity and build more resilient communities through humanitarian service.</p>
-          <p>Its work includes blood services, disaster management, safety, health, social services, and youth and volunteer services. It is guided by seven fundamental principles: humanity, impartiality, neutrality, independence, voluntary service, unity, and universality.</p>
-          <p>Its National Blood Services supports a safe blood supply and encourages voluntary blood donation. Explore the official site for current programs and guidance.</p>
-          <div class="link-row"><a class="inline-link" href="https://redcross.org.ph/about-us/" target="_blank" rel="noopener noreferrer">About the Philippine Red Cross <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://redcross.org.ph/national-blood-service/" target="_blank" rel="noopener noreferrer">Blood services <span aria-hidden="true">↗</span></a></div>
-        </div>
+    <section id="services" class="section services"><div class="container">
+      <div class="section-heading"><div><p class="kicker">01 / WHAT MYDUGO CONNECTS</p><h2>Practical help, from the first question to the next need.</h2></div><p>One shared workflow helps the chapter coordinate people and information. Care and clinical decisions remain with trained staff.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"></use></svg></span><span class="card-number">01</span><h3>Blood donation</h3><p>Prepare to donate and follow the chapter's review and screening process.</p></article>
+        <article class="service-card"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg></span><span class="card-number">02</span><h3>Blood requests</h3><p>Approved hospitals submit requests for chapter review and coordination.</p></article>
+        <article class="service-card"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg></span><span class="card-number">03</span><h3>Donation scheduling</h3><p>Request a blood-test visit when needed, then a donation appointment when cleared.</p></article>
+        <article class="service-card"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg></span><span class="card-number">04</span><h3>Volunteer coordination</h3><p>Approved volunteers follow published opportunities and assigned activities.</p></article>
+        <article class="service-card"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-bell"></use></svg></span><span class="card-number">05</span><h3>Emergency updates</h3><p>Suitable donors can see relevant approved blood needs through in-app updates.</p></article>
+        <article class="service-card"><span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-hospital"></use></svg></span><span class="card-number">06</span><h3>Hospital coordination</h3><p>Partner hospitals follow request status and communicate with chapter staff.</p></article>
       </div>
-    </section>
+    </div></section>
 
-    <section id="mydugo" class="app-section section-pad">
-      <div class="container">
-        <div class="section-head"><div><p class="section-kicker">02 / THE APP</p><h2>One place to prepare,<br>participate, and stay informed.</h2></div><p>MyDugo helps donors navigate each stage of their donation journey with chapter review at the center.</p></div>
-        <div class="feature-grid">
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">01</span><h3>Create your account</h3><p>Set up your donor profile and keep your information in one place.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">02</span><h3>Check eligibility</h3><p>Complete the questionnaire and follow your chapter-reviewed status.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">03</span><h3>See blood requests</h3><p>View relevant approved emergency requests and hospital details.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">04</span><h3>Manage appointments</h3><p>Request and follow donation or blood-test appointments.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">05</span><h3>Receive updates</h3><p>Read chapter decisions, requests, and reminders inside the app.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true">06</span><h3>View donation history</h3><p>See donations recorded in your account and track your journey.</p></article>
-        </div>
-      </div>
-    </section>
+    <section id="blood-donation" class="section donation"><div class="container">
+      <div class="section-heading"><div><p class="kicker">02 / THE DONOR JOURNEY</p><h2>A clear path to giving blood.</h2></div><p>MyDugo organizes the steps. Chapter review and the donation center's on-site screening determine whether a donation can go ahead.</p></div>
+      <ol class="journey-list">
+        <li><span>01</span><div><h3>Create an account</h3><p>Start a donor profile in the Android app.</p></div></li>
+        <li><span>02</span><div><h3>Check eligibility</h3><p>Answer the questionnaire honestly and submit it for review.</p></div></li>
+        <li><span>03</span><div><h3>Wait for chapter review</h3><p>Staff review your information and confirm the next step.</p></div></li>
+        <li><span>04</span><div><h3>Complete a blood test if required</h3><p>Follow the chapter's instructions. Staff verify the result.</p></div></li>
+        <li><span>05</span><div><h3>Request your visit</h3><p>When cleared, request an appointment and complete screening on site.</p></div></li>
+      </ol>
+      <p class="journey-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg> The questionnaire is a preparation step, not medical clearance.</p>
+    </div></section>
 
-    <section id="how-it-works" class="process section-pad">
-      <div class="container">
-        <div class="section-head compact"><div><p class="section-kicker">03 / YOUR PATH</p><h2>How MyDugo works</h2></div><p>Each decision stays with the people trained to make it.</p></div>
-        <ol class="process-list">
-          <li><span class="process-num">01</span><div><h3>Sign up</h3><p>Create a donor account in the Android app.</p></div></li>
-          <li><span class="process-num">02</span><div><h3>Complete the eligibility check</h3><p>Answer the questionnaire honestly and submit it for review.</p></div></li>
-          <li><span class="process-num">03</span><div><h3>Wait for chapter review</h3><p>Chapter staff review your information and confirm the next step.</p></div></li>
-          <li><span class="process-num">04</span><div><h3>Arrange a blood test if required</h3><p>Follow the chapter’s instructions. Staff verify the result and record the decision.</p></div></li>
-          <li><span class="process-num">05</span><div><h3>Schedule when eligible</h3><p>Request a donation appointment after the required approvals are complete.</p></div></li>
-        </ol>
-        <div class="process-note"><span aria-hidden="true">i</span><p>MyDugo helps organize the process. The questionnaire does not make a medical decision; chapter staff decide eligibility and blood-test status.</p></div>
-      </div>
-    </section>
-
-    <section class="audiences section-pad" aria-labelledby="audiences-title">
-      <div class="container"><p class="section-kicker">04 / THE COMMUNITY</p><h2 id="audiences-title">Different roles.<br>One shared purpose.</h2>
-        <div class="audience-grid">
-          <article class="audience-card"><span class="audience-index">01 / DONORS</span><h3>For donors</h3><p>Prepare for donation, follow review decisions, see approved emergency requests, manage appointments, and read your in-app updates and history.</p><a href="#mydugo">Explore donor features <span aria-hidden="true">→</span></a></article>
-          <article class="audience-card"><span class="audience-index">02 / VOLUNTEERS</span><h3>For volunteers</h3><p>Approved volunteers can see published opportunities, request participation, review assigned tasks, and keep a record of reported service hours.</p><a href="#how-it-works">See the community journey <span aria-hidden="true">→</span></a></article>
-          <article class="audience-card"><span class="audience-index">03 / PARTNER HOSPITALS</span><h3>For partner hospitals</h3><p>Approved hospital accounts can submit blood requests, follow chapter review, update request progress, and receive in-app status notifications.</p><a href="#contact">Chapter contact <span aria-hidden="true">→</span></a></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="screenshots" class="app-preview section-pad" aria-labelledby="preview-title">
-      <div class="container">
-        <div class="preview-heading">
-          <div><p class="section-kicker">05 / INSIDE MYDUGO</p><h2 id="preview-title">Your donor journey,<br>in your hands.</h2></div>
-          <p>From the first eligibility check to your donation history, MyDugo helps you follow each step with chapter review at the center.</p>
-        </div>
-        <div class="phone-showcase">
-          <div class="phone-features" aria-label="Donor app features">
-            <article class="phone-feature"><span aria-hidden="true">01</span><div><h3>Eligibility & review</h3><p>Complete the questionnaire and follow the chapter’s decision.</p></div></article>
-            <article class="phone-feature"><span aria-hidden="true">02</span><div><h3>Appointments</h3><p>Arrange a blood test if required, then schedule donation when eligible.</p></div></article>
-            <article class="phone-feature"><span aria-hidden="true">03</span><div><h3>In-app updates</h3><p>Read chapter updates and relevant approved blood requests.</p></div></article>
-            <article class="phone-feature"><span aria-hidden="true">04</span><div><h3>Donation history</h3><p>See donations recorded to your account in one place.</p></div></article>
-          </div>
-          <figure class="phone-figure">
-            <div class="phone-stage">
-              <div class="phone-device" aria-hidden="true">
-                <div class="phone-screen">
-                  <span class="phone-camera"></span>
-                  <div class="phone-appbar"><img src="assets/logo.png" alt="" width="28" height="28"><strong>MyDugo</strong><span class="phone-appbar-mark"></span></div>
-                  <div class="phone-content">
-                    <span class="phone-eyebrow">YOUR DONOR JOURNEY</span>
-                    <strong class="phone-title">Ready when<br>you are.</strong>
-                    <p>One place to prepare and stay informed.</p>
-                    <div class="phone-primary-card"><span>START HERE</span><strong>Eligibility check</strong><small>Complete your questionnaire for chapter review.</small><i>DONOR READINESS</i></div>
-                    <div class="phone-shortcuts"><div><span>02</span><strong>Appointments</strong></div><div><span>03</span><strong>Updates</strong></div></div>
-                    <div class="phone-history"><span>YOUR RECORD</span><strong>Donation history</strong><span aria-hidden="true">→</span></div>
-                  </div>
-                  <div class="phone-bottom-nav"><span>HOME</span><span>JOURNEY</span><span>PROFILE</span></div>
-                </div>
-              </div>
-            </div>
-            <figcaption>Illustrative feature preview. Actual app screens may differ.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="faq section-pad"><div class="container faq-grid"><div><p class="section-kicker">06 / GOOD TO KNOW</p><h2>Common questions,<br>clear answers.</h2><p>For personal medical questions, contact chapter staff or your healthcare provider.</p></div><div class="faq-list">
-      <details><summary>Does the eligibility questionnaire approve me to donate?</summary><p>No. It helps chapter staff review your information. Staff make the eligibility decision, and the donation center makes the final on-site assessment.</p></details>
-      <details><summary>What happens if I need a blood test?</summary><p>Follow the chapter’s instructions for a blood-test appointment or an accepted outside-lab report. Authorized staff review the result and record the Pass or Failed decision.</p></details>
-      <details><summary>Will MyDugo send me notifications?</summary><p>Updates appear in the in-app inbox. Device notifications depend on your device settings and app configuration. Do not rely on the app alone for urgent medical communication.</p></details>
-      <details><summary>How do I install the Android app?</summary><p>When an approved public release is available, use the verified download link on this page. Android may ask you to confirm installation from your browser. Download only from a link shared by the chapter.</p></details>
+    <section class="section why"><div class="container why-layout"><div class="why-intro"><p class="kicker">03 / WHY IT MATTERS</p><h2>Blood is needed in moments that cannot wait.</h2><p>Safe blood supports care in many settings. Voluntary donation helps blood services prepare for changing needs.</p><a class="inline-link" href="https://www.who.int/health-topics/blood-transfusion-safety" target="_blank" rel="noopener noreferrer">World Health Organization overview <svg class="icon" aria-hidden="true"><use href="#i-up"></use></svg></a></div><div class="why-list">
+      <article><span>01</span><div><h3>Emergency care</h3><p>Serious accidents and trauma may require transfusions.</p></div></article>
+      <article><span>02</span><div><h3>Surgery</h3><p>Some procedures depend on timely access to compatible blood.</p></div></article>
+      <article><span>03</span><div><h3>Medical treatment</h3><p>People living with certain conditions can need repeated transfusions.</p></div></article>
+      <article><span>04</span><div><h3>Maternal care</h3><p>Blood can be essential when pregnancy or childbirth has serious complications.</p></div></article>
+      <article><span>05</span><div><h3>Community readiness</h3><p>Maintaining a safe supply helps services respond when needs arise.</p></div></article>
     </div></div></section>
 
-    <section id="download" class="download section-pad"><div class="container download-grid"><div><p class="section-kicker light">07 / ANDROID APP</p><h2>Ready when<br>you are.</h2><p>The public Android release link is being verified. Return here for the approved download and its version, date, file size, and SHA-256 checksum.</p></div><div class="download-card"><span class="download-platform">ANDROID RELEASE</span><div class="download-status"><span class="status-dot"></span> Public download pending verification</div><button type="button" disabled aria-disabled="true">Download coming soon <span aria-hidden="true">↗</span></button><p>We will only link a verified public HTTPS release. No debug or older APK will be offered here.</p></div></div></section>
+    <section id="app" class="section app-section"><div class="container">
+      <div class="section-heading"><div><p class="kicker">04 / INSIDE MYDUGO</p><h2>A more connected way to be ready to help.</h2></div><p>The app keeps each role close to the next meaningful step. The screens below are illustrations of existing flows, not captured app screens.</p></div>
+      <div class="app-feature-grid">
+        <article><span>01</span><div><h3>Eligibility &amp; review</h3><p>Submit your questionnaire and follow the chapter's decision.</p></div></article>
+        <article><span>02</span><div><h3>Appointments</h3><p>Request a blood test if needed and a donation visit when cleared.</p></div></article>
+        <article><span>03</span><div><h3>Approved blood needs</h3><p>See relevant published requests and emergency updates in the app.</p></div></article>
+        <article><span>04</span><div><h3>Donation history</h3><p>Review donations recorded in your account.</p></div></article>
+        <article><span>05</span><div><h3>In-app messages</h3><p>Read chapter decisions, appointment updates, and reminders.</p></div></article>
+        <article><span>06</span><div><h3>Volunteer opportunities</h3><p>Approved volunteers can follow published activities and assignments.</p></div></article>
+      </div>
+      <div class="screen-gallery" aria-label="Illustrated MyDugo app views">
+        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">DONOR HOME</span><h3>Ready when<br>you are.</h3><p>Follow your next step with the chapter.</p><div class="device-red-card"><small>YOUR JOURNEY</small><strong>Start with eligibility</strong><span>Complete your questionnaire for review.</span></div><div class="device-tile"><span>APPOINTMENTS</span><strong>Plan a visit <b>→</b></strong></div><div class="device-tile"><span>YOUR RECORD</span><strong>Donation history <b>→</b></strong></div></div><div class="device-nav">HOME <span>JOURNEY</span> PROFILE</div></div></div><figcaption>Illustrative interface · Donor home</figcaption></figure>
+        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">ELIGIBILITY</span><h3>One step<br>at a time.</h3><p>Your answers help staff review your readiness.</p><div class="device-outline-card"><small>QUESTIONNAIRE</small><strong>Submitted for review</strong><span>Chapter staff confirm the outcome.</span></div><div class="device-progress"><span>Account created</span><i></i><span>Chapter review</span><i></i><span>Next step confirmed</span></div></div><div class="device-nav">HOME <span>JOURNEY</span> PROFILE</div></div></div><figcaption>Illustrative interface · Eligibility review</figcaption></figure>
+        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">APPOINTMENTS</span><h3>Plan your<br>visit.</h3><p>Chapter guidance comes before scheduling.</p><div class="device-outline-card"><small>WHEN REQUIRED</small><strong>Blood-test visit</strong><span>Follow the chapter's instructions.</span></div><div class="device-outline-card"><small>WHEN CLEARED</small><strong>Donation appointment</strong><span>Request an available visit.</span></div></div><div class="device-nav">HOME <span>VISITS</span> PROFILE</div></div></div><figcaption>Illustrative interface · Appointments</figcaption></figure>
+        <figure class="app-illustration"><div class="device"><div class="device-screen"><div class="device-status">9:41 <span>●●●</span></div><div class="device-bar"><img src="assets/logo.png" alt="" width="26" height="26"><strong>MyDugo</strong><span class="device-dot"></span></div><div class="device-content"><span class="device-kicker">IN-APP UPDATES</span><h3>Stay<br>informed.</h3><p>See messages relevant to your journey.</p><div class="device-message"><svg class="icon" aria-hidden="true"><use href="#i-bell"></use></svg><div><strong>Chapter update</strong><span>Review the latest status in your account.</span></div></div><div class="device-message"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg><div><strong>Approved blood need</strong><span>See a relevant published request.</span></div></div><div class="device-message"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><div><strong>Visit reminder</strong><span>Keep track of appointments.</span></div></div></div><div class="device-nav">HOME <span>UPDATES</span> PROFILE</div></div></div><figcaption>Illustrative interface · Updates</figcaption></figure>
+      </div>
+    </div></section>
 
-    <section id="contact" class="contact section-pad"><div class="container contact-grid"><div><p class="section-kicker">08 / GET IN TOUCH</p><h2>Closer to your<br>community.</h2><p>For chapter services or blood donation inquiries, use the Philippine Red Cross contact listing. Please confirm current hours and availability before visiting.</p></div><div class="contact-card"><span class="contact-label">PHILIPPINE RED CROSS · ALBAY–LEGASPI CITY</span><address>Gov. Locsin corner Fr. J. L. Bates Street<br>Albay, Legazpi City</address><a class="contact-phone" href="tel:+639771466761">0977 146 6761 <span aria-hidden="true">↗</span></a><a class="inline-link" href="https://redcross.org.ph/give-blood/" target="_blank" rel="noopener noreferrer">View the official blood-service listing <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section audiences"><div class="container"><p class="kicker">05 / PEOPLE WE SERVE</p><h2>Different roles. One shared purpose.</h2><div class="audience-grid">
+      <article><span>01 / DONORS</span><h3>For donors</h3><p>Prepare for donation, follow chapter review, see relevant approved requests, manage visits, and view your recorded history.</p><a href="#blood-donation">Explore the journey →</a></article>
+      <article><span>02 / HOSPITALS</span><h3>For partner hospitals</h3><p>Approved accounts submit blood requests and track chapter review and request progress.</p><a href="#assistance">Blood assistance →</a></article>
+      <article><span>03 / VOLUNTEERS</span><h3>For volunteers</h3><p>Approved volunteers find published opportunities, receive assignments, and review reported service.</p><a href="#volunteer">Volunteer with us →</a></article>
+      <article><span>04 / COMMUNITY</span><h3>For our community</h3><p>Learn about blood donation, humanitarian service, and where to ask the chapter for help.</p><a href="#about">Learn more →</a></article>
+    </div></div></section>
+
+    <section id="assistance" class="assistance"><div class="container assistance-inner"><div><p class="kicker">06 / BLOOD ASSISTANCE</p><h2>Need blood assistance?</h2><p>Authorized hospital accounts coordinate blood requests through MyDugo. Chapter staff review requests before donor outreach. If you need help, contact your hospital or the chapter directly.</p><div class="assistance-actions"><a class="button button-light" href="#contact">Contact the chapter <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="text-link-light" href="https://redcross.org.ph/give-blood/" target="_blank" rel="noopener noreferrer">Official blood-service listing ↗</a></div></div><p class="emergency-notice"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg> For an immediate medical emergency, contact a hospital or your local emergency services. This website does not dispatch emergency care.</p></div></section>
+
+    <section id="volunteer" class="section volunteer"><div class="container volunteer-grid"><figure class="volunteer-media photo-figure"><img src="assets/volunteers.jpg" alt="Volunteers sorting donated supplies into boxes" width="1400" height="933" loading="lazy"><figcaption>Illustrative photograph: <a href="https://www.pexels.com/photo/volunteers-packing-up-goods-7156179/" target="_blank" rel="noopener noreferrer">Gustavo Fring / Pexels</a>. This is not a chapter photograph.</figcaption></figure><div class="volunteer-copy"><p class="kicker">07 / GIVE YOUR TIME</p><h2>Your time can make a difference.</h2><p>Volunteers help humanitarian work happen. Approved MyDugo volunteers can follow published chapter opportunities and their assignments in the app.</p><p>Ask the chapter how to join or learn about Philippine Red Cross volunteer service.</p><div class="volunteer-actions"><a class="button button-primary" href="#contact">Contact the chapter <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a><a class="inline-link" href="https://redcross.org.ph/about-us/" target="_blank" rel="noopener noreferrer">Explore Red Cross service ↗</a></div></div></div></section>
+
+    <section id="about" class="section about"><div class="container about-grid"><div><p class="kicker">08 / HUMANITARIAN SERVICE</p><h2>More than blood donation.</h2><p class="about-lede">The Philippine Red Cross protects life and dignity through service led by trained staff and volunteers.</p></div><div class="about-detail"><p>Its work spans blood services, disaster management, safety, health, social services, and Red Cross Youth and volunteer services. Humanity, impartiality, neutrality, independence, voluntary service, unity, and universality guide the movement.</p><p>MyDugo helps the Albay–Legaspi City Chapter organize blood donation, hospital requests, and volunteer coordination in one app.</p><div class="about-links"><a class="inline-link" href="https://redcross.org.ph/about-us/" target="_blank" rel="noopener noreferrer">Philippine Red Cross mission ↗</a><a class="inline-link" href="https://redcross.org.ph/national-blood-service/" target="_blank" rel="noopener noreferrer">National Blood Services ↗</a></div></div></div></section>
+
+    <section class="section impact"><div class="container impact-grid"><div><p class="kicker">09 / REAL-WORLD IMPACT</p><h2>The work is measured in people helped.</h2></div><div><p>Every reviewed donor, coordinated request, and volunteer assignment is part of a larger effort to make care more timely and organized. We will share chapter-approved impact figures here when they are available.</p><div class="story-note"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg><div><strong>Stories from our community</strong><span>Community stories coming soon.</span></div></div></div></div></section>
+
+    <section id="faq" class="section faq"><div class="container faq-grid"><div><p class="kicker">10 / GOOD TO KNOW</p><h2>Questions, answered clearly.</h2><p>For personal medical advice or urgent care, speak with a qualified healthcare professional or the chapter.</p></div><div class="faq-list">
+      <details><summary>Who can donate blood?</summary><p>Donation depends on a health assessment and blood-service requirements. Complete the app questionnaire for chapter review, then follow the donation center's on-site screening. See <a href="https://redcross.org.ph/national-blood-service/" target="_blank" rel="noopener noreferrer">Philippine Red Cross blood-service guidance</a>.</p></details>
+      <details><summary>Does the eligibility check approve me to donate?</summary><p>No. Chapter staff review your answers and any required blood-test result. The donation center makes the final on-site decision.</p></details>
+      <details><summary>How can I schedule a blood donation?</summary><p>After the required chapter approvals, request an available donation appointment in MyDugo. You may need a blood-test visit first.</p></details>
+      <details><summary>Can I change my appointment?</summary><p>Review your appointment in the app and use its available update options, or contact the chapter if you need help. Availability and chapter confirmation still apply.</p></details>
+      <details><summary>What happens after I donate?</summary><p>Donations recorded to your account appear in your history after staff process them. Ask the donation center for personal post-donation guidance.</p></details>
+      <details><summary>How can I volunteer?</summary><p>Contact the chapter about joining. Approved volunteers can follow published opportunities and assignments in MyDugo.</p></details>
+      <details><summary>How can hospitals request blood?</summary><p>Approved partner hospital accounts submit requests in the app for chapter review. Patients and families should contact their treating hospital or the chapter directly.</p></details>
+      <details><summary>Will I receive emergency alerts?</summary><p>Relevant approved blood needs and chapter updates can appear in the app. Device notification delivery depends on device settings and app configuration; never rely on the app alone in an emergency.</p></details>
+      <details><summary>Where can I download MyDugo?</summary><p>An approved public Android download is being prepared. The link will appear here after its release URL and file details are verified. No iOS release is confirmed.</p></details>
+    </div></div></section>
+
+    <section id="download" class="download"><div class="container download-grid"><div><p class="kicker">11 / STAY CONNECTED</p><h2>Ready to make a difference?</h2><p>MyDugo keeps donation steps, chapter decisions, relevant blood needs, and service opportunities within reach.</p><div class="download-platform"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg> Android app · public release pending verification</div></div><div class="download-panel"><span>MYDUGO FOR ANDROID</span><h3>Your next step starts here.</h3><p>We are verifying the approved public release link. This page will show its version, date, size, and SHA-256 checksum before download is enabled.</p><button type="button" disabled aria-disabled="true">Android download coming soon <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button><small>No App Store, Google Play, or QR link is available yet.</small></div></div></section>
+
+    <section id="contact" class="section contact"><div class="container contact-grid"><div><p class="kicker">12 / GET IN TOUCH</p><h2>A local chapter, ready to listen.</h2><p>For blood donation questions, hospital assistance, or volunteering, contact the Philippine Red Cross Albay–Legaspi City Chapter. Confirm current services before visiting.</p></div><div class="contact-card"><span class="contact-eyebrow">PHILIPPINE RED CROSS · ALBAY–LEGASPI CITY</span><div><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg><address>Gov. Locsin corner Fr. J. L. Bates Street<br>Albay, Legazpi City, Philippines</address></div><p>Contact the chapter for current visiting hours.</p><a class="contact-phone" href="tel:+639771466761">0977 146 6761 <svg class="icon" aria-hidden="true"><use href="#i-up"></use></svg></a><a class="inline-link" href="https://redcross.org.ph/give-blood/" target="_blank" rel="noopener noreferrer">Check the official chapter listing ↗</a></div></div></section>
   </main>
-
-  <footer class="footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a class="brand" href="#top"><img src="assets/logo.png" alt="" width="40" height="40"><span>My<span class="brand-red">Dugo</span></span></a><p>A community blood donation and response app for the Albay–Legazpi City chapter.</p></div><div class="footer-links"><div><strong>Explore</strong><a href="#mydugo">The app</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a><a href="#download">Android app</a></div><div><strong>Resources</strong><a href="https://redcross.org.ph/" target="_blank" rel="noopener noreferrer">Philippine Red Cross ↗</a><a href="https://redcross.org.ph/about-us/" target="_blank" rel="noopener noreferrer">Mission and principles ↗</a><a href="https://redcross.org.ph/national-blood-service/" target="_blank" rel="noopener noreferrer">Blood services ↗</a><a href="privacy.html">Website privacy</a></div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> MyDugo. Information is subject to chapter confirmation.</span><span>Official Philippine Red Cross information: <a href="https://redcross.org.ph/" target="_blank" rel="noopener noreferrer">redcross.org.ph</a></span></div></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a class="brand" href="#top" aria-label="MyDugo home"><img src="assets/logo.png" alt="" width="44" height="44"><span>My<b>Dugo</b></span></a><p>Blood donation and community response for the Philippine Red Cross Albay–Legaspi City Chapter.</p></div><div class="footer-links"><div><strong>Explore</strong><a href="#about">About</a><a href="#services">Services</a><a href="#blood-donation">Blood donation</a><a href="#volunteer">Volunteer</a><a href="#app">The app</a></div><div><strong>Help &amp; information</strong><a href="#assistance">Blood assistance</a><a href="#faq">FAQ</a><a href="#download">Android release</a><a href="#contact">Contact</a><a href="privacy.html">Website privacy</a></div><div><strong>Official resources</strong><a href="https://redcross.org.ph/" target="_blank" rel="noopener noreferrer">Philippine Red Cross ↗</a><a href="https://redcross.org.ph/give-blood/" target="_blank" rel="noopener noreferrer">Blood service locations ↗</a><a href="https://www.who.int/health-topics/blood-transfusion-safety" target="_blank" rel="noopener noreferrer">WHO blood safety ↗</a></div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> MyDugo. Information is subject to chapter confirmation.</span><span>The privacy link covers this website only; app privacy information is provided separately.</span></div></div></footer>
 </body>
 </html>
