@@ -20,7 +20,9 @@ Open `http://127.0.0.1:8080/`.
 3. For each Android update, build with the same private release signing key. Verify the APK version, size, signature, and SHA-256 checksum; publish it as a GitHub Release asset; download it again to verify its hash. Only then update the hero and download section. Never copy the keystore or `key.properties` into this public repository.
 4. Recheck the chapter’s address and phone number against the [official Philippine Red Cross blood-service listing](https://redcross.org.ph/give-blood/) before sharing widely.
 
-The current public Android preview is [version 1.1.0 (build 8)](https://github.com/redblue1912/mydugo-public-site/releases/tag/v1.1.0-build8), built October 8, 2026. Its APK is 63,298,671 bytes, with SHA-256 `6882ec3f58514b9373946655736d45e1ed76cedf9c958a655ddc61168fa2ff04`. Earlier test APKs were signed with Android's debug key and cannot be updated in place with this new release signature.
+The current public Android preview is [version 1.1.0 (build 9)](https://github.com/redblue1912/mydugo-public-site/releases/tag/v1.1.0-build9), built October 8, 2026. Its APK is 63,298,895 bytes, with SHA-256 `83ccbbbc4734b2a45f1bfc6817adf294ea0699b3586deac11f2a555134dcb201`. Earlier test APKs were signed with Android's debug key and cannot be updated in place with this new release signature.
+
+Build 9 is the full MyDugo app. In **Find Blood Help**, donors, hospitals and volunteers can open **Albay–Legazpi chapter contact** for the real published PRC address and number. Dialer, address map search and source-page links are included; call to confirm current services, hours and the entrance. The chapter contact remains accessible if the live directory is unavailable or empty. It is not a standalone locator or a fictional-facility demo, and no draft facility was marked verified or published.
 
 ## App screen captures
 
