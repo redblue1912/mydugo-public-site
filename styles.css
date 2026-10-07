@@ -29,14 +29,14 @@ h3 { font-weight: 750; }
 h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 :focus-visible { outline: 3px solid #eb6067; outline-offset: 4px; }
 .container { width: min(calc(100% - 80px), var(--max)); margin-inline: auto; }
-.section { padding-block: 116px; }
-.section-pad { padding-block: 116px; }
+.section { padding-block: 76px; }
+.section-pad { padding-block: 76px; }
 .icon-library { display: none; }
 .icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .skip-link { position: fixed; top: -80px; left: 16px; z-index: 100; background: var(--ink); color: #fff; padding: 11px 18px; border-radius: 7px; }
 .skip-link:focus { top: 12px; }
 .kicker, .section-kicker { color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 20px; }
-.section-heading { display: grid; grid-template-columns: minmax(0, 1fr) 350px; align-items: end; gap: 80px; margin-bottom: 46px; }
+.section-heading { display: grid; grid-template-columns: minmax(0, 1fr) 350px; align-items: end; gap: 80px; margin-bottom: 32px; }
 .section-heading h2 { max-width: 800px; margin-bottom: 0; }
 .section-heading > p { max-width: 350px; margin-bottom: 5px; color: var(--muted); font-size: 15px; line-height: 1.85; }
 .inline-link { display: inline-flex; align-items: center; gap: 8px; color: var(--red-dark); font-size: 13px; font-weight: 800; border-bottom: 1px solid #df9ea2; padding-bottom: 4px; }
@@ -71,8 +71,8 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 /* Hero */
 .hero { overflow: hidden; color: var(--ink); background: #fbf6ed; }
 .hero-shell { position: relative; isolation: isolate; }
-.hero-grid { position: relative; z-index: 2; display: flex; align-items: center; min-height: 740px; padding-block: 64px; }
-.hero-copy { width: min(100%, 590px); }
+.hero-grid { position: relative; z-index: 2; display: flex; align-items: center; min-height: 0; padding-block: 40px 64px; }
+.hero-copy { width: min(100%, 630px); }
 .hero-identity { display: flex; align-items: center; gap: 13px; width: fit-content; margin-bottom: 28px; }
 .hero-identity img { width: 46px; height: 56px; object-fit: contain; }
 .hero-identity > span { font-size: 24px; font-weight: 800; line-height: 1; letter-spacing: -.055em; }
@@ -80,7 +80,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .hero-identity small { display: block; margin-top: 8px; color: #58626b; font-size: 8px; font-weight: 800; letter-spacing: .15em; }
 .eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 23px; color: #58626b; font-size: 10px; font-weight: 800; letter-spacing: .15em; }
 .eyebrow span { flex: none; width: 30px; height: 2px; background: var(--red); }
-.hero h1 { max-width: 590px; font-size: clamp(54px, 5.1vw, 76px); line-height: 1.07; margin-bottom: 24px; letter-spacing: -.06em; }
+.hero h1 { max-width: 630px; font-size: clamp(54px, 5.1vw, 76px); line-height: 1.07; margin-bottom: 24px; letter-spacing: -.06em; }
 .hero h1 em { color: #c51623; font-style: normal; }
 .hero-lede { max-width: 460px; color: #46525c; font-size: 17px; line-height: 1.8; margin-bottom: 29px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -112,7 +112,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .service-card h3 { font-size: 16px; margin-bottom: 9px; }
 .service-card p { max-width: 300px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .donation { background: var(--paper); }
-.journey-list { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 20px; padding: 0; margin: 74px 0 37px; }
+.journey-list { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 20px; padding: 0; margin: 42px 0 30px; }
 .journey-list li { position: relative; border-top: 1px solid #cfd4d5; padding: 28px 10px 0 0; }
 .journey-list li::before { content: ""; position: absolute; top: -5px; left: 0; width: 9px; height: 9px; background: var(--red); border-radius: 50%; }
 .journey-list li > span { display: block; margin-bottom: 27px; color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: .15em; }
@@ -151,7 +151,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .why-list article:hover img { transform: scale(1.03); }
 }
 .why-list .why-disclosure { grid-column: 1 / -1; margin: 7px 0 0; color: #59656f; font-size: 11px; line-height: 1.6; }
-.app-section { background: #fff; overflow: hidden; }
+.app-section { background: #fff; overflow: hidden; padding-top: 52px; }
 .app-section > .container { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr) minmax(0,.85fr); gap: clamp(22px,3vw,44px); align-items: center; }
 .app-section .app-intro { display: block; margin: 0; }
 .app-intro > p { max-width: 350px; margin: 23px 0 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
@@ -318,7 +318,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .footer-links > div { gap: 0; }
   .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
   .faq-list details a, .policy-page p a { padding-block: 13px; }
-  .section, .section-pad { padding-block: 92px; }
+  .section, .section-pad { padding-block: 64px; }
   .section-heading { grid-template-columns: 1fr 300px; gap: 35px; }
 
   .why-layout { grid-template-columns: 1fr; gap: 35px; }
@@ -337,7 +337,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 @media (max-width: 760px) {
   html { scroll-padding-top: 78px; }
   .container { width: min(calc(100% - 40px), var(--max)); }
-  .section, .section-pad { padding-block: 76px; }
+  .section, .section-pad { padding-block: 52px; }
   h2 { font-size: clamp(36px, 7vw, 48px); }
   .section-heading, .hero-grid, .why-layout, .assistance-inner, .volunteer-grid, .about-grid, .impact-grid, .faq-grid, .download-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
   .section-heading { margin-bottom: 33px; }
@@ -402,12 +402,12 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 /* Building hero: the image remains beneath the copy at every breakpoint. */
 @media (max-width: 1200px) {
   .hero-copy { width: min(100%, 530px); }
-  .hero-grid { min-height: 710px; }
+  .hero-grid { min-height: 0; }
   .hero h1 { font-size: clamp(52px, 5.8vw, 68px); }
   .hero-backdrop::after { background: linear-gradient(90deg, #fbf6ed 0%, rgba(251,246,237,.98) 43%, rgba(251,246,237,.95) 62%, rgba(251,246,237,.25) 88%, transparent); }
 }
 @media (max-width: 760px) {
-  .hero-grid { min-height: 0; padding-block: 44px 300px; }
+  .hero-grid { min-height: 0; padding-block: 32px 220px; }
   .hero-copy { width: min(100%, 560px); }
   .hero h1 { font-size: clamp(42px, 8vw, 60px); }
   .hero-backdrop img { object-position: 67% bottom; }
