@@ -20,7 +20,7 @@ Open `http://127.0.0.1:8080/`.
 3. For each Android update, build with the same private release signing key. Verify the APK version, size, signature, and SHA-256 checksum; publish it as a GitHub Release asset; download it again to verify its hash. Only then update the hero and download section. Never copy the keystore or `key.properties` into this public repository.
 4. Recheck the chapter’s address and phone number against the [official Philippine Red Cross blood-service listing](https://redcross.org.ph/give-blood/) before sharing widely.
 
-The current public Android preview is [version 1.1.0 (build 6)](https://github.com/redblue1912/mydugo-public-site/releases/tag/v1.1.0-build6), built October 7, 2026. Its APK is 63,118,447 bytes, with SHA-256 `3f2da88a4630575b51879d8461602d098e9469a94f6ad1eb3c2d55f3447aba29`. Earlier test APKs were signed with Android's debug key and cannot be updated in place with this new release signature.
+The current public Android preview is [version 1.1.0 (build 7)](https://github.com/redblue1912/mydugo-public-site/releases/tag/v1.1.0-build7), built October 7, 2026. Its APK is 63,298,671 bytes, with SHA-256 `78e140060fc466ef5703b0a03cfd6ee1dcdf73cdfd148247e58c1d6e629c095d`. Earlier test APKs were signed with Android's debug key and cannot be updated in place with this new release signature.
 
 ## App screen captures
 
