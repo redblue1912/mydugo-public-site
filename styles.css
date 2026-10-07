@@ -130,10 +130,20 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .why-list article > div { padding: 0 15px 24px; }
 .why-list h3 { font-size: 15px; margin: 26px 0 8px; }
 .why-list p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
-.why-list article > img { display: block; width: 100%; height: clamp(200px, 23vw, 290px); margin-top: auto; object-fit: cover; }
-.why-list article:nth-child(3) > img { object-position: center 28%; }
-.why-list article:nth-child(4) > img { object-position: center 38%; }
-.why-list article:nth-child(5) > img { object-position: center 25%; }
+.why-list article > .why-card-image { padding: 0; margin-top: auto; overflow: hidden; }
+.why-card-image > img { display: block; width: 100%; height: clamp(200px, 23vw, 290px); object-fit: cover; }
+.why-list article:nth-child(3) img { object-position: center 28%; }
+.why-list article:nth-child(4) img { object-position: center 38%; }
+.why-list article:nth-child(5) img { object-position: center 25%; }
+@media (hover: hover) and (pointer: fine) {
+  .why-list article:hover { border-color: #e8a7ad; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .why-list article { transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+  .why-card-image > img { transition: transform 220ms ease; }
+  .why-list article:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(16,24,32,.12); }
+  .why-list article:hover img { transform: scale(1.03); }
+}
 .why-list .why-disclosure { grid-column: 1 / -1; margin: 7px 0 0; color: #59656f; font-size: 11px; line-height: 1.6; }
 .app-section { background: #fff; overflow: hidden; }
 .app-section > .container { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr) minmax(0,.85fr); gap: clamp(22px,3vw,44px); align-items: center; }
@@ -312,7 +322,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .hero-lede { font-size: 16px; }
   .why-layout { grid-template-columns: 1fr; gap: 35px; }
   .why-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .why-list article > img { height: auto; aspect-ratio: 2 / 3; }
+  .why-card-image > img { height: auto; aspect-ratio: 2 / 3; }
   .audience-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .audience-grid article { min-height: 260px; }
   .audience-grid article > span { margin-bottom: 25px; }
