@@ -46,9 +46,9 @@ The Philippine Red Cross descriptions link to official resources. The supplied M
 
 ## Editorial image credits
 
-The three local photographs are generic illustrations of humanitarian work, not photographs of the Albay–Legaspi City Chapter. The owner confirmed authorization for MyDugo to describe its chapter association; the site does not reuse an unprovided Red Cross emblem.
+The three local photographs are illustrative editorial images, not photographs of the Albay–Legaspi City Chapter. The owner confirmed authorization for MyDugo to describe its chapter association; the site does not reuse an unprovided Red Cross emblem.
 
-- `assets/donation-center.jpg`: [Rahul Sapra / Pexels](https://www.pexels.com/photo/man-lying-on-a-gurney-12820069/).
+- `assets/healthcare-building.jpg`: [Mehmet Turgut Kirkgoz / Pexels](https://www.pexels.com/photo/modern-building-of-hospital-19447467/). This is a real building photograph, but it does not depict the local chapter.
 - `assets/community-aid.jpg`: [Julia M Cameron / Pexels](https://www.pexels.com/photo/volunteers-preparing-donations-6995212/).
 - `assets/volunteers.jpg`: [Gustavo Fring / Pexels](https://www.pexels.com/photo/volunteers-packing-up-goods-7156179/).
 
