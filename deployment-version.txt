@@ -1,3 +1,3 @@
 MyDugo public site
-Android release: 1.1.0 (build 15)
-Deployment refresh: 2026-10-12
+Android release: 1.1.0 (build 16)
+Deployment refresh: 2026-10-16
