@@ -69,9 +69,14 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .back-link:hover { color: var(--red); }
 
 /* Hero */
-.hero { overflow: hidden; color: var(--ink); background: linear-gradient(115deg, #fff 0%, #fff 48%, #fff6f7 100%); }
-.hero-grid { display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); align-items: center; gap: clamp(38px, 5vw, 84px); padding-block: clamp(56px, 6vw, 94px) 58px; }
-.hero-copy { max-width: 550px; }
+.hero { overflow: hidden; color: var(--ink); background: #fff; }
+.hero-stage { position: relative; isolation: isolate; min-height: 650px; background: #e9edf0; }
+.hero-scene { position: absolute; inset: 0; margin: 0; overflow: hidden; }
+.hero-scene img { width: 100%; height: 100%; object-fit: cover; object-position: center 33%; }
+.hero-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.99) 18%, rgba(255,255,255,.91) 33%, rgba(255,255,255,.52) 52%, rgba(255,255,255,.03) 75%); pointer-events: none; }
+.hero-scene figcaption { position: absolute; right: max(24px, calc((100vw - var(--max)) / 2)); bottom: 21px; z-index: 1; padding: 7px 10px; border-radius: 5px; background: rgba(255,255,255,.92); color: #3a444d; font-size: 10px; font-weight: 700; line-height: 1.35; }
+.hero-content { position: relative; z-index: 1; display: flex; align-items: center; min-height: 650px; padding-block: 55px 75px; }
+.hero-copy { max-width: 545px; }
 .hero-kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 29px; padding: 9px 13px; border: 1px solid #f6d7da; border-radius: 100px; background: #fff4f5; color: #ae1822; font-size: 10px; font-weight: 800; letter-spacing: .13em; }
 .hero-kicker span { flex: none; width: 14px; height: 2px; background: var(--red); }
 .eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 23px; color: #58626b; font-size: 10px; font-weight: 800; letter-spacing: .15em; }
@@ -89,11 +94,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .photo-figure { margin: 0; }
 .photo-figure figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding-top: 7px; color: #68747d; font-size: 10px; line-height: 1.45; }
 .photo-figure figcaption a { text-decoration: underline; text-underline-offset: 2px; }
-.hero-photo { position: relative; overflow: hidden; min-width: 0; aspect-ratio: 1.04; border: 6px solid #fff; border-radius: 18px; background: #d7dfe3; box-shadow: 16px 16px 0 #f6dadd, 0 28px 65px rgba(31, 29, 34, .13); }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
-.hero-photo::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, rgba(10, 18, 24, .8)); pointer-events: none; }
-.hero .hero-photo figcaption { z-index: 1; left: 25px; right: 25px; bottom: 22px; color: #fff; font-size: 11px; text-shadow: 0 1px 4px rgba(0,0,0,.4); }
-.hero-foot { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-block: 0 44px; }
+.hero-foot { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-block: 24px 34px; }
 .hero-foot-item { display: flex; gap: 14px; align-items: flex-start; padding: 18px; border: 1px solid #f0e3e5; border-radius: 12px; background: #fff; box-shadow: 0 12px 30px rgba(80, 35, 41, .035); }
 .hero-foot-item:first-child { padding: 18px; border: 1px solid #f0e3e5; }
 .hero-foot-number { display: grid; flex: none; place-items: center; width: 30px; height: 30px; border-radius: 8px; background: #fff1f2; color: var(--red-dark); font-size: 12px; font-weight: 800; }
@@ -339,7 +340,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .container { width: min(calc(100% - 40px), var(--max)); }
   .section, .section-pad { padding-block: 52px; }
   h2 { font-size: clamp(36px, 7vw, 48px); }
-  .section-heading, .hero-grid, .why-layout, .assistance-inner, .volunteer-grid, .about-grid, .impact-grid, .faq-grid, .download-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
+  .section-heading, .why-layout, .assistance-inner, .volunteer-grid, .about-grid, .impact-grid, .faq-grid, .download-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
   .section-heading { margin-bottom: 33px; }
   .section-heading > p { max-width: 600px; }
 
@@ -400,23 +401,23 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 }
 
 @media (max-width: 1020px) {
-  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: 34px; }
   .hero h1 { font-size: clamp(45px, 5.4vw, 62px); }
+  .hero-scene::after { background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.98) 30%, rgba(255,255,255,.7) 55%, rgba(255,255,255,.1) 88%); }
 }
 @media (max-width: 760px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 38px; padding-block: 49px 42px; }
+  .hero-stage, .hero-content { min-height: 760px; }
+  .hero-content { align-items: flex-start; padding-block: 45px 145px; }
+  .hero-scene img { object-position: 74% center; }
+  .hero-scene::after { background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,.99) 36%, rgba(255,255,255,.82) 59%, rgba(255,255,255,.06) 94%); }
+  .hero-scene figcaption { right: 20px; bottom: 18px; }
   .hero-copy { max-width: 620px; }
   .hero h1 { max-width: 650px; font-size: clamp(43px, 8vw, 62px); }
-  .hero-photo { aspect-ratio: 1.18; }
-  .hero-foot { grid-template-columns: 1fr; gap: 10px; padding-block: 0 28px; }
+  .hero-foot { grid-template-columns: 1fr; gap: 10px; padding-block: 20px 28px; }
   .hero-foot-item, .hero-foot-item:first-child { padding: 15px; }
 }
 @media (max-width: 500px) {
   .hero-kicker { font-size: 9px; letter-spacing: .11em; margin-bottom: 22px; }
   .hero h1 { font-size: clamp(42px, 11vw, 52px); margin-bottom: 22px; }
   .hero-lede { font-size: 16px; margin-bottom: 26px; }
-  .hero-photo { aspect-ratio: 1.02; border-radius: 12px; box-shadow: 10px 10px 0 #f6dadd, 0 18px 38px rgba(31,29,34,.12); }
-  .hero .hero-photo figcaption { left: 16px; right: 16px; bottom: 15px; font-size: 10px; }
+  .hero-stage, .hero-content { min-height: 805px; }
 }
-.hero .hero-photo figcaption { position: absolute; display: block; }
-.hero .hero-photo figcaption a { display: inline; min-height: 0; }
