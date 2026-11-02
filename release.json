@@ -1,8 +1,8 @@
 {
   "version": "1.1.0",
-  "build": 26,
-  "released_on": "2026-11-02",
-  "apk_url": "https://github.com/redblue1912/mydugo-public-site/releases/download/v1.1.0-build26/MyDugo-1.1.0-build26-release.apk",
+  "build": 27,
+  "released_on": "2026-11-03",
+  "apk_url": "https://github.com/redblue1912/mydugo-public-site/releases/download/v1.1.0-build27/MyDugo-1.1.0-build27-release.apk",
   "bytes": 63955071,
-  "sha256": "1d66329b9927ab79b0a63d2455a05572e9efe41bb7cfbb3a9cf28c745c3e3146"
+  "sha256": "17067de50eeb0f3b3e7e8075aaf5bc72445c9d42ea10b56a81e031a8b6ce3da3"
 }
