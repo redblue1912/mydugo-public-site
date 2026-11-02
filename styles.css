@@ -381,7 +381,7 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .role-shot.is-active { left: 6%; transform: translate3d(0, 0, 20px) rotateY(4deg) rotateZ(-2deg); }
   .role-shot.is-next { left: 44%; }
   .role-switcher { gap: 5px; }
-  .role-switcher button { flex: 1 1 30%; padding-inline: 8px; }
+  .role-switcher button { flex: 1 1 40%; padding-inline: 8px; }
   .about-media img { height: 300px; }
   .audience-grid article { min-height: 0; }
   .audience-grid article > span { margin-bottom: 30px; }

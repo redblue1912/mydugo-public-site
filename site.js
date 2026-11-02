@@ -49,13 +49,14 @@ const roleButtons = [...document.querySelectorAll('.role-switcher button[data-ro
 const roleShots = [...document.querySelectorAll('.role-shot[data-role]')];
 const roleDetails = [...document.querySelectorAll('.role-detail[data-role]')];
 const roleStage = document.querySelector('.role-stage');
-if (roleStage && roleButtons.length === 3 && roleShots.length === 3) {
+if (roleStage && roleButtons.length > 0 && roleShots.length === roleButtons.length && roleDetails.length === roleButtons.length) {
   const roles = roleButtons.map((button) => button.dataset.role);
   const selectRole = (role) => {
     const index = roles.indexOf(role);
     if (index < 0) return;
     const next = roles[(index + 1) % roles.length];
-    roleStage.setAttribute('aria-label', `MyDugo ${role} Flutter widget preview`);
+    const roleName = roleButtons[index].textContent.trim();
+    roleStage.setAttribute('aria-label', `MyDugo ${roleName} Flutter widget preview`);
     roleButtons.forEach((button) => {
       const selected = button.dataset.role === role;
       button.classList.toggle('is-active', selected);
@@ -70,4 +71,5 @@ if (roleStage && roleButtons.length === 3 && roleShots.length === 3) {
     roleDetails.forEach((detail) => { detail.hidden = detail.dataset.role !== role; });
   };
   roleButtons.forEach((button) => button.addEventListener('click', () => selectRole(button.dataset.role)));
+  selectRole(roleButtons.find((button) => button.classList.contains('is-active'))?.dataset.role || roles[0]);
 }

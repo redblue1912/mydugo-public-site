@@ -1,3 +1,4 @@
 MyDugo public site
 Android release: 1.1.0 (build 24)
-Deployment refresh: 2026-11-01
+Deployment refresh: 2026-11-02
+Website update: Public User app preview

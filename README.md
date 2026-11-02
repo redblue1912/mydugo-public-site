@@ -26,11 +26,19 @@ Build 9 is the full MyDugo app. In **Find Blood Help**, donors, hospitals and vo
 
 ## App screen captures
 
-From the full private repository, regenerate the three public image files with:
+From the full private repository, regenerate the donor, hospital, and volunteer image files with:
 
 ```powershell
 flutter test test/public_site_capture_test.dart --no-pub --dart-define=EXPORT_PUBLIC_SCREENS=true
 ```
+
+The fourth preview, `assets/public-feature.png`, is the populated Public User dashboard captured by:
+
+```powershell
+flutter test test/public_account_capture_test.dart --no-pub --dart-define=EXPORT_PUBLIC_ACCOUNT_PREVIEW=true
+```
+
+Copy `docs/audits/2026-11-01/public-account-dashboard-sample.png` to `public-site/assets/public-feature.png`. It uses `PublicDashboardView` with a fictional profile and local sample events and announcements, clearly labeled as sample data. Public users register and verify their email; their dashboard has read-only public content.
 
 The test uses the actual `AppointmentPreparationPage`, `HospitalInventoryAvailability`, `VolunteerImpactCard`, and `VolunteerDestination` Flutter widgets. Its demo values are hard-coded locally and never query Firebase or Supabase. Review the rendered images before copying them to the public repository. The public website labels them as widget previews with demo data.
 
