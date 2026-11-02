@@ -1,6 +1,7 @@
 MyDugo public site
-Android release: 1.1.0 (build 25)
+Android release: 1.1.0 (build 26)
 Deployment refresh: 2026-11-02
 Website update: Public User app preview
 Hero image: Real medical building photograph
 Hospital accounts: Administrator-created only
+Donor appointments: Combined blood test and donation visit
