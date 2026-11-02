@@ -1,5 +1,6 @@
 MyDugo public site
-Android release: 1.1.0 (build 24)
+Android release: 1.1.0 (build 25)
 Deployment refresh: 2026-11-02
 Website update: Public User app preview
 Hero image: Real medical building photograph
+Hospital accounts: Administrator-created only
