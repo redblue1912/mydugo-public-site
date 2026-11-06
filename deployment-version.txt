@@ -1,5 +1,5 @@
 MyDugo public site
-Android release: 1.1.0 (build 32)
+Android release: 1.1.0 (build 33)
 Deployment refresh: 2026-11-07
 Website update: Public User app preview
 Hero image: Real medical building photograph
@@ -7,7 +7,7 @@ Hospital accounts: Administrator-created only
 Donor appointments: Combined blood test and donation visit
 Donor dashboard: Active emergency requests first; Critical before Urgent
 Branding: MyDugo; corrected canonical API and admin host
-Android install ID: com.example.mydugo; updates builds 29, 30 and 31 in place
+Android install ID: com.example.mydugo; updates builds 29 through 32 in place
 Scheduling center: Philippine Red Cross Albay-Legazpi City Chapter only
 Scheduling times: 9:30 AM or 1:00 PM; lunch noon to 1:00 PM
 Chapter updates: All user dashboards; administrator event photo uploads; pagination
@@ -15,6 +15,7 @@ Donor profile: Privacy & Consent and Where I can help removed
 Digital donor card: Removed
 Bottom navigation: Duplicate Schedule and Requests tabs removed; dashboard actions retained
 Donor menu: Home, History, Profile
-Hospital menu: Home, Inbox, Reports, Profile
+Hospital menu: Home, Inbox, Profile
 Volunteer menu: Home, Explore, More
 Public menu: Home, Events, Announcements
+Hospital Reports: Dashboard Quick actions only; duplicate bottom tab removed
