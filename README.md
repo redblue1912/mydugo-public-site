@@ -54,7 +54,7 @@ The Philippine Red Cross descriptions link to official resources. The supplied M
 
 ## Editorial image credits
 
-The homepage hero uses `assets/medical-building-photo.jpg`, a real photograph of a modern medical building by LEDC. It is an illustrative building photograph, not the Albay–Legaspi City Chapter's building. It is used under the [Unsplash License](https://unsplash.com/license), with the photographer and source credited in the hero caption. The two other local photographs are illustrative editorial images, not photographs of chapter activity.
+The homepage hero uses `assets/medical-building-photo.jpg`, a real photograph of a modern medical building by LEDC. It is an illustrative building photograph, not the Albay–Legaspi City Chapter's building. It is used under the [Unsplash License](https://unsplash.com/license), with the photographer and source credited below. The visible hero credit badge was removed at the user's request. The two other local photographs are illustrative editorial images, not photographs of chapter activity.
 
 - `assets/medical-building-photo.jpg`: [LEDC / Unsplash](https://unsplash.com/photos/modern-medical-centre-building-with-glass-facade-Ytcp0r7SIE4), downloaded at 2400 × 1600 pixels without retouching.
 - `assets/community-aid.jpg`: [Julia M Cameron / Pexels](https://www.pexels.com/photo/volunteers-preparing-donations-6995212/).

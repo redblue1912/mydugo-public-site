@@ -24,3 +24,5 @@ Donor profile SMS: Urgent SMS alerts card and phone-verification entry removed
 Build 37: aligned full-width donor actions; hospital Requests, Inbox, Reports and Profile in bottom navigation.
 
 Build 38: MyDugo logo fade-in, two gentle heartbeat pulses and soft red glow; reduced-motion support; existing opening duration retained.
+
+Website: Removed the visible building photo credit badge; source credit retained in README.

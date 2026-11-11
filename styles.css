@@ -74,8 +74,6 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
 .hero-scene { position: absolute; inset: 0; margin: 0; overflow: hidden; }
 .hero-scene img { width: 100%; height: 100%; object-fit: cover; object-position: center 50%; }
 .hero-scene::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.99) 18%, rgba(255,255,255,.91) 33%, rgba(255,255,255,.52) 52%, rgba(255,255,255,.03) 75%); pointer-events: none; }
-.hero-scene figcaption { position: absolute; right: max(24px, calc((100vw - var(--max)) / 2)); bottom: 21px; z-index: 1; padding: 7px 10px; border-radius: 5px; background: rgba(255,255,255,.92); color: #3a444d; font-size: 10px; font-weight: 700; line-height: 1.35; }
-.hero-scene figcaption a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .hero-content { position: relative; z-index: 1; display: flex; align-items: center; min-height: 650px; padding-block: 55px 75px; }
 .hero-copy { max-width: 545px; }
 .hero-kicker { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 29px; padding: 9px 13px; border: 1px solid #f6d7da; border-radius: 100px; background: #fff4f5; color: #ae1822; font-size: 10px; font-weight: 800; letter-spacing: .13em; }
@@ -410,7 +408,6 @@ h2 { font-size: clamp(38px, 4vw, 58px); margin-bottom: 24px; }
   .hero-content { align-items: flex-start; padding-block: 45px 145px; }
   .hero-scene img { object-position: 74% center; }
   .hero-scene::after { background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,.99) 36%, rgba(255,255,255,.82) 59%, rgba(255,255,255,.06) 94%); }
-  .hero-scene figcaption { right: 20px; bottom: 18px; }
   .hero-copy { max-width: 620px; }
   .hero h1 { max-width: 650px; font-size: clamp(43px, 8vw, 62px); }
   .hero-foot { grid-template-columns: 1fr; gap: 10px; padding-block: 20px 28px; }
